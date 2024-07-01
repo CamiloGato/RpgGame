@@ -1,0 +1,15 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/_Systems/Renderer/Editor/Resources/AnimationRenderer.uss?fileID=7433441132597879392&amp;guid=6a5008d43b61b5843935eb6b9e903d4d&amp;type=3#AnimationRenderer" />
+    <engine:VisualElement name="RootView" style="flex-grow: 1;">
+        <engine:Label text="Sprite Renderer Preview" name="TitleLabel" class="title" />
+        <engine:VisualElement name="SettingsSection" style="flex-grow: 1; flex-direction: column; flex-wrap: wrap;">
+            <editor:ObjectField label="Texture2D" data-source-type="UnityEngine.Texture2D, UnityEngine.CoreModule" name="PreviewTextureField" />
+            <engine:IntegerField label="Width" value="0" name="PreviewWidthField" />
+            <engine:IntegerField label="Height" value="0" name="PreviewHeightField" />
+            <engine:Button text="Generate" name="PreviewGenerateButton" />
+        </engine:VisualElement>
+        <engine:VisualElement name="PreviewSection" style="flex-grow: 1;">
+            <engine:IMGUIContainer data-source-type="UnityEngine.Sprite, UnityEngine.CoreModule" name="PreviewImage" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>
